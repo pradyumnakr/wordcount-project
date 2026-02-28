@@ -11,10 +11,10 @@ A clean, elegant word counting tool built with Django. Paste in any text and get
 ## Screenshots
 
 ### Home Page
-![Home Page](https://github.com/user-attachments/assets/placeholder-home.png)
+![Home Page](screenshots/home.png)
 
 ### Results Page
-![Results Page](https://github.com/user-attachments/assets/placeholder-results.png)
+![Results Page](screenshots/results.png)
 
 ## Tech Stack
 
