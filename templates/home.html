@@ -1,10 +1,14 @@
-<h1>WORD COUNT</h1>
+{% extends 'base.html' %}
 
-<a href="{% url 'about' %}">ABOUT</a>
+{% block content %}
+<h1>Every word<br><em>counts.</em></h1>
+<p class="subtitle">Paste your text and get an instant, detailed breakdown.</p>
 
-
-<form action="{%url 'count'%}">
-	<textarea cols="40" rows="10" name="fulltext"></textarea><br>
-	<input type="submit" name="" value="count">
-
+<form action="{% url 'count' %}">
+	<div class="input-group">
+		<span class="section-label">Your text</span>
+		<textarea name="fulltext" placeholder="Begin typing or paste your text here..."></textarea>
+	</div>
+	<input type="submit" value="Analyse →" class="btn-primary">
 </form>
+{% endblock %}

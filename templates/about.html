@@ -1,3 +1,19 @@
-<h1>Hello myself Pradyumna</h1>
+{% extends 'base.html' %}
 
-<a href="{% url 'home' %}">Return</a>
+{% block content %}
+<h1>About</h1>
+<hr class="divider">
+
+<div class="about-content">
+    <p>
+        <strong>WordCount</strong> is a clean, simple tool for analysing text.
+        Paste in a paragraph, an essay, or anything — and get a full breakdown
+        of every word and its frequency.
+    </p>
+    <p>
+        Designed and built by <strong>Pradyumna</strong>, powered by Django.
+    </p>
+</div>
+
+<a href="{% url 'home' %}" class="back-link">← Back home</a>
+{% endblock %}
